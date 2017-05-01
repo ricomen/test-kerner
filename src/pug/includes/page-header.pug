@@ -22,19 +22,33 @@ header.page-header
   .container
     .page-header__wrap
       .page-header__top
-        1
+        a.page-header__logo(href="/")
+          img(src="img/logo.png" srcset="img/logo@2x.png 2x" alt="Kerner")
+          span Оборудование для сверления и металлообработки
+        .page-header__search
+          form(action="/" method="GET")
+            input(type="text" name="search" placeholder="Поиск по сайту")
+        .page-header__callback
+          a(href="tel:+88007758795") 8 800 775-87-95
+          a.btn.btn--callback Обратный звонок
       .page-header__body
-        1
+        .page-header__content
+          h1.page-header__title Промышленное оборудование<br>для сверления и металлообработки
+          a.btn.btn--toCatalog(href="/") Перейти в каталог
       .page-header__bottom
-        div
+        .page-header__features
           +icon("delivery", 43, 49)
-          b Поставка оборудования и запчастей
-          p От 11 ведущих производителей
-        div 
+          .page-header__features-text
+            b Поставка оборудования и запчастей
+            p От 11 ведущих производителей
+        .page-header__features
           +icon("delay-pay", 54, 44)
-          b Рассрочка платежа 
-          p До 45 дней с оформления заказа
-        div 
+          .page-header__features-text
+            b Рассрочка платежа 
+            p До 45 дней с оформления заказа
+        .page-header__features
           +icon("truck", 44, 50)
-          b Доставка товаров 
-          p Международная и междугородняя в срок до 10 дней
+          .page-header__features-text
+            b Доставка товаров 
+            p Международная и междугородняя<br> в срок до 10 дней
+  a(class="page-header__scroll")
