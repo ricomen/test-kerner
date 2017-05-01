@@ -93,7 +93,7 @@ gulp.task('svgSprite', function () {
         },
           parserOptions: { xmlMode: true }
     }))    
-    .pipe(rename('symbol-sprite.html'))
+    .pipe(rename('symbol-sprite.svg'))
     .pipe(gulp.dest('src/img/'));
 });
 
@@ -191,8 +191,7 @@ gulp.task('img', function() {
   return gulp.src('src/img/**/*.*')
     .pipe(cache(imagemin({
       interlaced: true,
-      progressive: true,
-      svgoPlugins: [{removeViewBox: false}],
+      progressive: true,      
       use: [pngquant()]
   })))
     .pipe(gulp.dest('build/img'));
