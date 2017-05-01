@@ -1,0 +1,36 @@
+.page-header {
+  color: #fff;
+  background: #17191b url("../img/header-bg.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+
+  &__navbar {    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);    
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 50px;      
+    }    
+  }//navbar
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    height: ~"calc(100vh - 51px)"; 
+  }//wrap
+
+  &__top {
+    flex-grow: 0;    
+  }//top
+
+  &__body {
+    flex-grow: 1;
+  }//body
+
+  &__bottom {
+    flex-grow: 0;
+    display: flex;
+    justify-content: space-between;
+  }//bottom
+}

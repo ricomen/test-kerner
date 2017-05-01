@@ -1,0 +1,40 @@
+header.page-header
+  .page-header__navbar
+    .container
+      nav.main-nav
+        ul.main-nav__list
+          li.main-nav__item
+            a(href="/") О компании
+          li.main-nav__item
+            a(href="/") Оплата и доставки
+          li.main-nav__item
+            a(href="/") Производители
+          li.main-nav__item
+            a(href="/") Статьи
+          li.main-nav__item
+            a(href="/") Контакты
+          li.main-nav__item
+            a(href="/") Отзывы
+      .user-block
+        a.user-block__login(href="/") Войти
+          +icon("user", 14, 17)
+        a.user-block__reg(href="/") Регистрация
+  .container
+    .page-header__wrap
+      .page-header__top
+        1
+      .page-header__body
+        1
+      .page-header__bottom
+        div
+          +icon("delivery", 43, 49)
+          b Поставка оборудования и запчастей
+          p От 11 ведущих производителей
+        div 
+          +icon("delay-pay", 54, 44)
+          b Рассрочка платежа 
+          p До 45 дней с оформления заказа
+        div 
+          +icon("truck", 44, 50)
+          b Доставка товаров 
+          p Международная и междугородняя в срок до 10 дней

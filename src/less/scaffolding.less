@@ -1,0 +1,63 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: @font-size;
+  height: 100%;
+}
+body {  
+  font-family: @Roboto;
+  word-wrap: break-word;
+  //color: ;
+  //background-color: ;  
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+.container {
+  max-width: 1170px;//изменть под проект
+  .center();  
+  box-sizing: border-box;
+  
+  @media @phone {
+
+  }
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  font-family: @font-family;
+}
+a {
+  margin: 0;
+  padding: 0;    
+  text-decoration: none;
+}
+input,
+textarea {
+  color: inherit;
+  font-family: inherit;
+}
+
+// градиент для текста
+// -------------------
+// -webkit-background-clip: text;
+// -webkit-text-fill-color: transparent;
+// -------------------
+// a {  
+//   text-decoration: none;
+//   background-color: transparent;
+//   &:hover,
+//   &:focus {
+//     color: $link-color--hover;
+//     text-decoration: underline;
+//   }
+// }
+
+//от переполнения тпекстом
+// white-space: nowrap;
+// overflow: hidden;
+// text-overflow: ellipsis;
